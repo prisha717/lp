@@ -59,7 +59,7 @@ I developed an AI-powered customer support chatbot using OpenAI’s GPT models t
       							  <li>Added a real-time progress bar to visualize course completion beneath the tables.</li>
       							  <li>Built the Course Review feature to allow users to leave and view feedback on completed courses.</li>
       							  <li>Integrated Spring Security for login, registration, and access control.</li>
-      							  <li>Structured code using MVC with packages: <code>controller</code>, <code>domain</code>, <code>repository</code>, <code>service</code>, and <code>config</code>.</li>
+      							  <li>Structured code using MVC with packages: controller, domain, repository, service and config.</li>
     							</ul>
 							<p><strong>Team Collaboration:</strong></p>
     							<ul>
@@ -72,25 +72,39 @@ I developed an AI-powered customer support chatbot using OpenAI’s GPT models t
 							<p><strong>Tech stack:</strong>Python, BeautifulSoup, pandas, scikit-learn, matplotlib | Group Project<br>Developed as part of a team, this project involved building a full data analytics pipeline — from scraping real-world data to deploying machine learning models. We collaborated on designing systems for intelligent recipe recommendations and taste prediction using real cooking data from BBC Food.<br>
 							<strong>My Contributions:</strong></p>
 							<ul>
-    							  <li>Implemented the <strong>web scraping engine</strong> using <code>BeautifulSoup</code> to extract structured data from dynamic recipe pages.</li>
-    							  <li>Led the <strong>exploratory data analysis</strong> and built visualizations to uncover insights on recipe popularity and rating distributions.</li>
-    							  <li>Built a <strong>cosine similarity-based recommender system</strong> using combined recipe features to deliver personalized suggestions.</li>
-    							  <li>Implemented a <strong>binary classifier</strong> to predict whether a recipe would be considered “tasty” based on its ratings.</li>
+    							  <li>Implemented the web scraping engine using BeautifulSoup to extract structured data from dynamic recipe pages.</li>
+    							  <li>Led the exploratory data analysis and built visualizations to uncover insights on recipe popularity and rating distributions.</li>
+    							  <li>Built a cosine similarity-based recommender system using combined recipe features to deliver personalized suggestions.</li>
+    							  <li>Implemented a binary classifier to predict whether a recipe would be considered “tasty” based on its ratings.</li>
     							  <li>Contributed to team code reviews, debugging, and aligning implementation with academic requirements.</li>
   							</ul>
 							<p><strong>Key Features of the Project:</strong></p>
   							<ul>
-    							  <li><strong>Web Scraping:</strong> Automated collection of recipe data from BBC Food into a structured pandas DataFrame and CSV export.</li>
-    							  <li><strong>Statistical Analysis:</strong> Performed bootstrapped confidence interval estimation and explored rating distributions.</li>
-    							  <li><strong>Recommender Systems:</strong>
+    							  <li>Web Scraping: Automated collection of recipe data from BBC Food into a structured pandas DataFrame and CSV export.</li>
+    							  <li>Statistical Analysis: Performed bootstrapped confidence interval estimation and explored rating distributions.</li>
+    							  <li>Recommender Systems:
       							    <ul>
         						      <li>Used Cosine Similarity (Vector Space Model) for basic recommendations.</li>
         						      <li>Implemented a second recommendation engine using K-Nearest Neighbors (KNN).</li>
       							    </ul>
     							  </li>
-    							  <li><strong>Evaluation:</strong> Compared both engines on <em>coverage</em> and <em>personalisation</em> using test users and qualitative analysis.</li>
-    							  <li><strong>Classification:</strong> Created a predictive model to determine recipe tastiness using a binary label and tested model accuracy.</li>
+    							  <li>Evaluation: Compared both engines on <em>coverage</em> and <em>personalisation</em> using test users and qualitative analysis.</li>
+    							  <li>Classification: Created a predictive model to determine recipe tastiness using a binary label and tested model accuracy.</li>
   							</ul>
+							<h2>Healthcare API and Academic App</h2>
+							<p><Strong>Part 1: Hospital Management REST API</Strong><br><strong>Tech Stack: </strong>Java - SpringBoot, MySQL, Postman, OpenAPI3.0 (Swagger)<br>We built a full functional REST API for managing hospital operations, covering patients, doctors, appointments and medical records. The system was designed to reflect real-life data relationships and cascading effects when entities are deleted.</p>
+							<li><strong>Key Features:</strong>
+								<ul>Full CRUD endpoints for all 4 entities using REST principles.</ul>
+								<ul>Complex relationships handled using backend logic:<br>Deleting a patient removes their appointments and records.<br>Deleting a doctor removes their appointments but not patients or records.<br>Deleting an appointment removes the associated medical record.</ul>
+								<ul>OpenAPI 3.0 YAML spec created using Swagger Editor for clear documentation of all endpoints, including successful and error responses.</ul>
+								<ul>Postman Test Suite: We designed and executed test cases (both success and error) for all 20+ endpoints, validating correctness and error handling.</ul>
+								<ul>Spring Boot used to create controller classes like PatientRestController, DoctorRestController, AppointmentRestController, and MedicalRecordRestController using a clean MVC structure.</ul>
+							</li>
+							<p>This sharpened my backend skills in designing robust APIs, managing data relationships and validating inpot/output using automated testing.</p>
+							
+							
+							
+							
 
 					</div>
 
