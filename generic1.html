@@ -55,7 +55,7 @@ I developed an AI-powered customer support chatbot using OpenAI’s GPT models t
 							<p><strong>Tech stack:</strong>Spring Boot, JSP, SQL, Spring Security | Group Project<br> This project was developed as part of a group collaboration, where we built a secure and dynamic web application to support users in managing their IBM SkillsBuild learning journey. Our goal was to create a platform that not only tracks course progress but also encourages user engagement through course reviews.<br>
 							This collaborative web application helps users manage their IBM SkillsBuild learning journey. Built with secure authentication, it provides a structured dashboard to view and track course progress, as well as a space to share course reviews.<br>My Role & Contributions:</p>
     							<ul>
-      							  <li>Designed and implemented the dashboard with categorized tables: Available, Started, and Completed Courses.</li>
+      							  <li>Designed and implemented the dashboard with categorised tables: Available, Started, and Completed Courses.</li>
       							  <li>Added a real-time progress bar to visualize course completion beneath the tables.</li>
       							  <li>Built the Course Review feature to allow users to leave and view feedback on completed courses.</li>
       							  <li>Integrated Spring Security for login, registration, and access control.</li>
@@ -88,20 +88,34 @@ I developed an AI-powered customer support chatbot using OpenAI’s GPT models t
         						      <li>Implemented a second recommendation engine using K-Nearest Neighbors (KNN).</li>
       							    </ul>
     							  </li>
-    							  <li>Evaluation: Compared both engines on <em>coverage</em> and <em>personalisation</em> using test users and qualitative analysis.</li>
+    							  <li>Evaluation: Compared both engines on coverage and personalisation using test users and qualitative analysis.</li>
     							  <li>Classification: Created a predictive model to determine recipe tastiness using a binary label and tested model accuracy.</li>
   							</ul>
 							<h2>Healthcare API and Academic App</h2>
-							<p><Strong>Part 1: Hospital Management REST API</Strong><br><strong>Tech Stack: </strong>Java - SpringBoot, MySQL, Postman, OpenAPI3.0 (Swagger)<br>We built a full functional REST API for managing hospital operations, covering patients, doctors, appointments and medical records. The system was designed to reflect real-life data relationships and cascading effects when entities are deleted.</p>
-							<li><strong>Key Features:</strong>
-								<ul>Full CRUD endpoints for all 4 entities using REST principles.</ul>
-								<ul>Complex relationships handled using backend logic:<br>Deleting a patient removes their appointments and records.<br>Deleting a doctor removes their appointments but not patients or records.<br>Deleting an appointment removes the associated medical record.</ul>
-								<ul>OpenAPI 3.0 YAML spec created using Swagger Editor for clear documentation of all endpoints, including successful and error responses.</ul>
-								<ul>Postman Test Suite: We designed and executed test cases (both success and error) for all 20+ endpoints, validating correctness and error handling.</ul>
-								<ul>Spring Boot used to create controller classes like PatientRestController, DoctorRestController, AppointmentRestController, and MedicalRecordRestController using a clean MVC structure.</ul>
-							</li>
+							<p><Strong>Part 1: Hospital Management REST API</Strong><br><strong>Tech Stack: </strong>Java - SpringBoot, MySQL, Postman, OpenAPI3.0 (Swagger)<br>Built a full functional REST API for managing hospital operations, covering patients, doctors, appointments and medical records. The system was designed to reflect real-life data relationships and cascading effects when entities are deleted.</p>
+							<ul><strong>Key Features:</strong>
+								<li>Full CRUD endpoints for all 4 entities using REST principles.</ul>
+								<li>Complex relationships handled using backend logic:<br>Deleting a patient removes their appointments and records.<br>Deleting a doctor removes their appointments but not patients or records.<br>Deleting an appointment removes the associated medical record.</li>
+								<li>OpenAPI 3.0 YAML spec created using Swagger Editor for clear documentation of all endpoints, including successful and error responses.</li>
+								<li>Postman Test Suite: We designed and executed test cases (both success and error) for all 20+ endpoints, validating correctness and error handling.</li>
+								<li>Spring Boot used to create controller classes like PatientRestController, DoctorRestController, AppointmentRestController, and MedicalRecordRestController using a clean MVC structure.</li>
+							</ul>
 							<p>This sharpened my backend skills in designing robust APIs, managing data relationships and validating inpot/output using automated testing.</p>
-							
+							<p><strong>Part 2: Course Manager Android App</strong><br><strong>Tech Stack:</strong> Android Studio, Java, SQLite<br>Developed an Android application to help professors manage courses and student enrollments. The system allowed for bidirectional relationships: students enroll in multiple courses and course have multiple students.</p>
+							<ul><strong>Key Features:</strong>
+								<li>Create and View Courses: Custom form UI with persistent storage via SQLite.</li>
+								<li>Add/Edit/Delete Students: CRUD operations with checks to prevent duplicates and allow clean editing.</li>
+								<li>Student Enrollments: Handled many-to-many relationships while maintaining database consistency.</li>
+								<li>Course Details View: Show enrolled students dynamically with RecyclerViews.</li>
+								<li>Student Details View: Display all courses a student is enrolled in.</li>
+								<li>Dialog-Based UI for editing/removing students.</li>
+								<li>Data Integrity: Deleting a course removes only its enrollments; deleting a student removes them from all enrolled courses without deleting course data.</li>
+							</ul>
+							<ul><strong>UX Design: </strong> 
+								<li>Used FloatingActionButtons for intuitive navigation.</li>
+								<li>Minimalist interface design tailored for mobile usability.</li>
+								<li>Applied modular code structure for maintainability and scalability.</li>
+							</ul>
 							
 							
 							
